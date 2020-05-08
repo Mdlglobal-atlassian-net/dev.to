@@ -20,7 +20,7 @@ gem "ahoy_email", "~> 1.1" # Email analytics for Rails
 gem "algorithmia", "~> 1.1" # Ruby Client for Algorithmia Algorithms and Data API
 gem "ancestry", "~> 3.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
 gem "autoprefixer-rails", "~> 9.7" # Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
-gem "aws-sdk-lambda", "~> 1.39" # Official AWS Ruby gem for AWS Lambda
+gem "aws-sdk-lambda", "~> 1.40" # Official AWS Ruby gem for AWS Lambda
 gem "blazer", "~> 2.2.2" # Allows admins to query data
 gem "bootsnap", ">= 1.1.0", require: false # Boot large ruby/rails apps faster
 gem "buffer", "~> 0.1" # Buffer is a Ruby Wrapper for the Buffer API
@@ -29,7 +29,7 @@ gem "carrierwave-bombshelter", "~> 0.2" # Protect your carrierwave from image bo
 gem "cld", "~> 0.8" # Compact Language Detection for Ruby
 gem "cloudinary", "~> 1.13" # Client library for easily using the Cloudinary service
 gem "counter_culture", "~> 2.3" # counter_culture provides turbo-charged counter caches that are kept up-to-date
-gem "ddtrace", "~> 0.34.2" # ddtrace is Datadog’s tracing client for Ruby.
+gem "ddtrace", "~> 0.35.1" # ddtrace is Datadog’s tracing client for Ruby.
 gem "devise", "~> 4.7" # Flexible authentication solution for Rails
 gem "dogstatsd-ruby", "~> 4.8" # A client for DogStatsD, an extension of the StatsD metric server for Datadog
 gem "doorkeeper", "~> 5.3" # Oauth 2 provider
@@ -38,6 +38,7 @@ gem "elasticsearch", "~> 7.6" # Powers DEVs core search functionality
 gem "email_validator", "~> 2.0" # Email validator for Rails and ActiveModel
 gem "emoji_regex", "~> 3.0" # A pair of Ruby regular expressions for matching Unicode Emoji symbols
 gem "envied", "~> 0.9" # Ensure presence and type of your app's ENV-variables
+gem "faraday-http-cache", "~> 2.2" # Middleware to handle HTTP caching
 gem "fast_jsonapi", "~> 1.5" # Serializer for Ruby objects
 gem "fastly", "~> 2.5" # Client library for the Fastly acceleration system
 gem "feedjira", "~> 3.1" # A feed fetching and parsing library
@@ -136,7 +137,7 @@ group :development, :test do
   gem "rubocop", "~> 0.82", require: false # Automatic Ruby code style checking tool
   gem "rubocop-performance", "~> 1.5", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
   gem "rubocop-rails", "~> 2.5", require: false # Automatic Rails code style checking tool
-  gem "rubocop-rspec", "~> 1.38", require: false # Code style checking for RSpec files
+  gem "rubocop-rspec", "~> 1.39", require: false # Code style checking for RSpec files
   gem "spring", "~> 2.1" # Preloads your application so things like console, rake and tests run faster
   gem "spring-commands-rspec", "~> 1.0" # rspec command for spring
 end
